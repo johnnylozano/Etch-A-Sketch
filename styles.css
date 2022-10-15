@@ -3,12 +3,47 @@
 *::after {
    padding: 0;
    margin: 0;
+   box-sizing: border-box;
 }
 
 body {
    width: 100vw;
    height: 100vh;
+   background-image: linear-gradient(180deg, #c30010, #1d2e68);
+   display: flex;
+   flex-direction: column;
+}
+
+header {
+   height: 120px;
    background-color: #121212;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.title {
+   color: #fffdd0;
+   font-family: "Lobster", sans-serif;
+   font-size: 60px;
+}
+
+.button-wrapper {
+   display: flex;
+   justify-content: center;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.btn {
+   height: 55px;
+   width: 160px;
+   border-radius: 10%;
+   background-color: #1d2e68;
+   font-family: Georgia, sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   color: #d5d3b1;
 }
 
 .center {
@@ -16,15 +51,14 @@ body {
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
-   padding: 2px;
-   border: 5px solid #fff;
+   border: 8px solid #121212;
 }
 
 .sketch-container {
    top: 0;
    left: 0;
-   width: 820px;
-   height: 820px;
+   width: 620px;
+   height: 620px;
    background-color: #282828;
    display: flex;
    flex-direction: column;
@@ -37,9 +71,25 @@ body {
 }
 
 .square {
-   background-color: #b3b3b3;
-   /* min-width: 40px; */
+   background-color: #222222;
    flex: 1;
-   /* height: 40px; */
-   margin: 3px;
+   margin: 1px;
+}
+
+.dark {
+   background-color: #fffdd0;
+}
+
+.copyright {
+   color: #fffdd0;
+   font-family: "Lobster", sans-serif;
+   font-size: 20px;
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   height: 60px;
+   width: 100vw;
 }

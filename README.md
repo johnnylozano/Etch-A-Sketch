@@ -1,5 +1,5 @@
 
-# Rock, Paper, Scissors!
+# Etch-A-Sketch
 
 <img src="./demo.gif" alt="Demo of Etch-A-Sketch">
 
